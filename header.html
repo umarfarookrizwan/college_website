@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Header with Logo and Menu</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        .header {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            background-color: #13375c;
+            box-shadow: 0 2px 4px rgba(30, 20, 95, 0.1);
+            z-index: 1000;
+        }
+        .header-top {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 100%;
+            padding: 25px 20px;
+            position: relative;
+        }
+        .header-top img {
+            height: 80px; 
+            position: absolute; 
+            left: 20px;
+        }
+        .header-top h1 {
+            margin: 0;
+            font-size: 30px;
+            color: #fefdff;
+            font-weight: bold; 
+        }
+        .header-bottom {
+            display: flex;
+            justify-content: center;
+            width: 100%;
+            background-color: #e0e0e0;
+            padding: 10px 0;
+        }
+        .header-bottom a {
+            margin: 0 30px;
+            font-size: 16px;
+            color: #1b126d;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        .header-bottom a:hover {
+            text-decoration: underline;
+        }
+        .content {
+            margin-top: 70px; /* Adjust this value based on the height of the header */
+            padding: 20px;
+        }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <div class="header-top">
+            <img src="https://college4u.in/wp-content/uploads/2018/03/bsb.jpg" alt="Logo">
+            <h1>CRESCENT UNIVERSITY</h1>
+        </div>
+        <div class="header-bottom">
+            <a href="home.php">Home</a>
+            <a href="admission.php">Admission</a>
+            <a href="department.php">Department</a>
+            <a href="contact.php">Contact</a>
+            <a href="register.php">Register</a>
+            <a href="login.php">Login</a>
+        </div>
+    </header>
+    <div class="content">
+        <h2></h2>
+        <p></p>
+        
+    </div>
+</body>
+</html>
